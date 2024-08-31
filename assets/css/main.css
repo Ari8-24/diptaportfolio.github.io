@@ -3907,3 +3907,67 @@ input, select, textarea {
 			}
 
 		}
+
+
+	
+
+	
+	@media only screen and (max-width: 600px) {
+		#intro .inner, #one .inner {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#intro img, #one img {
+			width: 80%;
+			margin: 10px 0;
+		}
+
+		#intro h1, #one h2 {
+			text-align: center;
+			font-size: 1.5rem;
+		}
+
+		#one .inner {
+			justify-content: center;
+		}
+
+		#sidebar {
+			display: none;
+		}
+
+		#wrapper {
+			padding: 0 10px;
+		}
+
+		.content {
+			padding: 0 10px;
+		}
+	}
+
+	
+	@media (max-width: 768px) {
+    #two .image, #two .content {
+			flex: 1 1 100%;
+			max-width: 100%;
+			margin: 0 0 20px 0;
+    	}
+
+    #two{
+        	display: block; /* Ensures block display for smaller screens */
+    	}
+
+    #two section {
+        	flex-direction: column; /* Stack the image and text vertically */
+    	}
+
+    #two .image img {
+			width: 100%; /* Make images responsive */
+			height: auto;
+    	}
+
+    #two .content {
+        	padding: 0 15px; /* Add some padding for better readability */
+    	}
+	}
+
